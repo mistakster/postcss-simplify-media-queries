@@ -20,6 +20,7 @@
     "css-tree": "^2.3.0"
   },
   "devDependencies": {
+    "postcss": "^8.4.33",
     "vitest": "^1.2.1"
   }
 }

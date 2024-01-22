@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should completely remove useless (min-width: 0) 1`] = `
+"
+          .example {
+              padding: 0;
+          }
+  "
+`;
+
+exports[`should process (min-width: 0) 1`] = `
+"
+      @media (min-width:200px) {
+          .example {
+              padding: 0;
+          }
+      }
+  "
+`;
+
+exports[`should work 1`] = `
+"
+      @media (min-width:400px) {
+          .example {
+              padding: 0;
+          }
+      }
+  "
+`;
