@@ -1,0 +1,25 @@
+{
+  "name": "postcss-simplify-media-queries",
+  "version": "1.0.1",
+  "description": "This plugin removes redundant parts of the media description",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "media-queries",
+    "optimize",
+    "simplify"
+  ],
+  "author": "Vladimir Kuznetsov <mistakster@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "css-tree": "^2.3.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.2.1"
+  }
+}
