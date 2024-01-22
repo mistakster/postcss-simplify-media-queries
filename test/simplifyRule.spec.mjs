@@ -51,3 +51,11 @@ it('should work with max-width correctly', () => {
   expect(simplifyRules('(max-width:199.98px) and (max-width:399.98px)'))
     .toBe('(max-width:199.98px)');
 });
+
+it('should skip CSS4 syntax', () => {
+  expect(simplifyRules('(30em <= width <= 50em)'))
+    .toBe('(30em <= width <= 50em)');
+
+  expect(simplifyRules('(width >= 50em) and (width >= 80em)'))
+    .toBe('(width >= 50em) and (width >= 80em)');
+});
