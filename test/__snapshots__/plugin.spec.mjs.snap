@@ -8,6 +8,16 @@ exports[`should completely remove useless (min-width: 0) 1`] = `
   "
 `;
 
+exports[`should parse multiple media queries 1`] = `
+"
+      @media screen and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+          .example {
+              padding: 0;
+          }
+      }
+  "
+`;
+
 exports[`should process (min-width: 0) 1`] = `
 "
       @media (min-width:200px) {

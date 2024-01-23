@@ -46,3 +46,16 @@ it('should completely remove useless (min-width: 0)', async () => {
 
   await expect(process(css)).resolves.toMatchSnapshot();
 });
+
+it('should parse multiple media queries', async () => {
+  // language=CSS
+  const css = `
+      @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .example {
+              padding: 0;
+          }
+      }
+  `;
+
+  await expect(process(css)).resolves.toMatchSnapshot();
+});
