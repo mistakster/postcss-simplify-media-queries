@@ -1,6 +1,6 @@
 {
   "name": "postcss-simplify-media-queries",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This plugin removes redundant parts of the media description",
   "main": "index.mjs",
   "type": "module",
